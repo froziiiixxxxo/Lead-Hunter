@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lead Hunter — Твой охотник за лидами</title>
+  <meta name="description" content="Lead Hunter — CRM с ИИ-аудитом сайтов, скорингом лидов 0–100 и воронкой продаж. Загрузи базу, получи анализ, напиши клиенту. Данные — на твоём сервере.">
+  <meta name="theme-color" content="#050505">
+  <meta property="og:title" content="Lead Hunter — Твой охотник за лидами">
+  <meta property="og:description" content="ИИ-аудитор сайтов, скоринг 0–100, воронка продаж и генерация КП. Всё на твоём сервере.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ССЫЛКА}}">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='21' fill='none' stroke='%237c3aed' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23db2777'/%3E%3Cpath d='M32 2v15M32 47v15M2 32h15M47 32h15' stroke='%237c3aed' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- единственная инлайн-строка JS: класс "js" нужен до первой отрисовки,
+       чтобы reveal-блоки не мигали; вся остальная логика — в script.js -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body id="top">
+
+  <!-- общий градиент для SVG-иконок -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7c3aed"/>
+        <stop offset="100%" stop-color="#db2777"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- ===== Шапка ===== -->
+  <header class="header" id="header">
+    <div class="container header-in">
+      <a class="logo" href="#top" aria-label="Lead Hunter — наверх">
+        <svg width="24" height="24" viewBox="0 0 32 32" fill="none" stroke="url(#lg)" aria-hidden="true">
+          <circle cx="16" cy="16" r="9" stroke-width="2.2"/>
+          <circle cx="16" cy="16" r="2.6" fill="url(#lg)" stroke="none"/>
+          <path d="M16 1.5v6M16 24.5v6M1.5 16h6M24.5 16h6" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <span>Lead Hunter</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#features">Возможности</a>
+        <a href="#how">Как работает</a>
+        <a href="#lessons">Уроки</a>
+        <a href="#pricing">Цены</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="btn btn-grad btn-sm header-cta" href="#pricing">Купить</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="orb orb-a" aria-hidden="true"></div>
+      <div class="orb orb-b" aria-hidden="true"></div>
+
+      <div class="container hero-in">
+        <span class="eyebrow reveal">Система охоты за клиентами</span>
+        <h1 class="reveal" style="--d:.08s">Твой охотник <span class="grad-text">за лидами</span></h1>
+        <p class="hero-sub reveal" style="--d:.16s">Автоматизируй холодные рассылки. Экономь 80% времени.</p>
+        <div class="hero-actions reveal" style="--d:.24s">
+          <a class="btn btn-grad btn-lg" href="#pricing">Купить
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13"/><path d="M12 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#how">Как это работает</a>
+        </div>
+        <p class="trust reveal" style="--d:.32s">Данные остаются у тебя · Работает на твоём сервере · Без подписки за базу</p>
+      </div>
+
+      <div class="container shot-wrap reveal" style="--d:.2s">
+        <div class="shot">
+          <!-- макет интерфейса; при желании замени на настоящий скриншот <img> -->
+          <div class="mockup" role="img" aria-label="Интерфейс Lead Hunter: база лидов со скорингом">
+            <div class="mock-bar" aria-hidden="true"><i></i><i></i><i></i><span>leadhunter — база лидов</span></div>
+            <div class="mock-body" aria-hidden="true">
+              <div class="mock-head">
+                <b>База лидов</b>
+                <span class="mock-live"><i></i>аудит идёт</span>
+              </div>
+              <div class="mock-kpis">
+                <div><b data-count="240">240</b><span>компаний</span></div>
+                <div><b data-count="186">186</b><span>аудитов</span></div>
+                <div><b data-count="27">27</b><span>высокий потенциал</span></div>
+              </div>
+              <div class="mock-rows">
+                <div class="mock-row">
+                  <div><b>СтройМонтаж</b><small>Москва · строительство</small></div>
+                  <em class="score score-hot">80</em>
+                </div>
+                <div class="mock-row">
+                  <div><b>АвтоПрайд</b><small>Казань · автоуслуги</small></div>
+                  <em class="score score-hot">72</em>
+                </div>
+                <div class="mock-row">
+                  <div><b>Кофейня «Лофт»</b><small>СПб · общепит</small></div>
+                  <em class="score">48</em>
+                </div>
+                <div class="mock-row">
+                  <div><b>ТехноЛайн</b><small>Екатеринбург · b2b</small></div>
+                  <em class="score">31</em>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Возможности ===== -->
+    <section class="section" id="features">
+      <div class="orb orb-c" aria-hidden="true"></div>
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="over">Возможности</span>
+          <h2>Шесть инструментов — одна система</h2>
+          <p>От импорта базы до закрытой сделки. Без зоопарка из таблиц и десяти чатов.</p>
+        </div>
+        <div class="features">
+          <article class="glass reveal">
+            <div class="chip">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="url(#lg)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4.5 17.5h15"/><path d="M5.2 17.5a6.8 6.8 0 1 1 13.6 0"/><path d="M12 17.5l3.6-4.4"/><circle cx="12" cy="17.5" r="1.3" fill="url(#lg)" stroke="none"/></svg>
+            </div>
+            <h3>Аудит сайтов перед звонком</h3>
+            <p>Доступность (HTTP), скорость, мобильная версия, контакты, устаревшие технологии + PageSpeed от Google: FCP, LCP, CLS. Список проблем и рекомендаций — аргументы для первого разговора. Компании без сайта — отдельным списком.</p>
+          </article>
+          <article class="glass reveal" style="--d:.08s">
+            <div class="chip">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="url(#lg)" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="5" height="16" rx="1.5"/><rect x="9.5" y="4" width="5" height="10" rx="1.5"/><rect x="16" y="4" width="5" height="13" rx="1.5"/></svg>
+            </div>
+            <h3>База и воронка</h3>
+            <p>Статусы кликом по бейджу, карточка компании с историей, kanban до «Согласен» и задачи-касания с подсветкой просрочки. Шаблоны с подстановками — готовое сообщение в WhatsApp, Telegram или email.</p>
+          </article>
+          <article class="glass reveal" style="--d:.16s">
+            <div class="chip">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="url(#lg)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="14" height="11" rx="2"/><path d="M3 13.8h14M8.5 13.8V20"/><path d="M19.5 3v8M16.7 8.2l2.8 2.8 2.8-2.8"/></svg>
+            </div>
+            <h3>Импорт Excel</h3>
+            <p>Перетащи файл — и база в системе: .xlsx и .csv до 5000 строк, колонки сопоставляются сами, дубли по ИНН, телефону и email не плодятся. Отчёт покажет, какая колонка куда ушла.</p>
+          </article>
+          <article class="glass reveal">
+            <div class="chip">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="url(#lg)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </div>
+            <h3>Кампании</h3>
+            <p>Сегменты по городу, нише и скорингу. Статусы участников — от «ожидает» до «стал клиентом», деньги и воронка по каждой кампании.</p>
+          </article>
+          <article class="glass reveal" style="--d:.08s">
+            <div class="chip">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="url(#lg)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 2.5H7A1.5 1.5 0 0 0 5.5 4v16A1.5 1.5 0 0 0 7 21.5h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/><path d="M13.5 2.5v5h5"/><path d="M9 13h6M9 16.5h4"/></svg>
+            </div>
+            <h3>КП на данных аудита</h3>
+            <p>Три варианта КП собираются из реальных проблем сайта клиента. Отправка — только после твоего одобрения: черновик → одобрен → отправлен.</p>
+          </article>
+          <article class="glass reveal" style="--d:.16s">
+            <div class="chip">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="url(#lg)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 20.5h16"/><path d="M7 20.5v-5.5M12 20.5v-9M17 20.5V7"/><path d="M5.5 9.5L10 5.5l3.5 2.5L18.5 4"/><path d="M15.5 4h3v3"/></svg>
+            </div>
+            <h3>Аналитика</h3>
+            <p>Конверсии в контакт, ответ и сделку; деньги в воронке, города, эффективность кампаний. Решения по цифрам, а не по ощущениям.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Как это работает ===== -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="over">Как это работает</span>
+          <h2>Три шага до первого клиента</h2>
+        </div>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="step-dot" aria-hidden="true"></span>
+            <span class="step-num">01</span>
+            <h3>Загрузи базу</h3>
+            <p>Перетащи Excel или CSV — колонки сопоставятся сами, дубли отсеются. До 5000 строк за один импорт.</p>
+          </li>
+          <li class="reveal" style="--d:.12s">
+            <span class="step-dot" aria-hidden="true"></span>
+            <span class="step-num">02</span>
+            <h3>Получи анализ</h3>
+            <p>Аудит каждого сайта и скоринг 0–100. Понятно, кому звонить первым и с какими аргументами.</p>
+          </li>
+          <li class="reveal" style="--d:.24s">
+            <span class="step-dot" aria-hidden="true"></span>
+            <span class="step-num">03</span>
+            <h3>Напиши клиенту</h3>
+            <p>Шаблон с подстановками — готовое сообщение в WhatsApp, Telegram или email за пару кликов.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Уроки продаж ===== -->
+    <section class="section" id="lessons">
+      <div class="orb orb-e" aria-hidden="true"></div>
+      <div class="container">
+        <div class="lessons-grid">
+          <div class="lessons-copy">
+            <div class="sec-head sec-head--left reveal">
+              <span class="over">Уроки продаж</span>
+              <h2>Обычная CRM хранит лиды. Lead Hunter ещё и учит их закрывать</h2>
+              <p>12 уроков под воронку: первый контакт, аудит как аргументы, квалификация, касания, возражения, сделка. У каждого — чек-лист с отметками «пройдено». Урок привязан к статусу лида: завис на этапе — плашка-ссылка прямо на карточке компании. Уроки редактируются под твой стиль продаж.</p>
+            </div>
+            <ul class="lesson-rows">
+              <li class="lesson-row reveal">
+                <span class="spill">Новый</span>
+                <svg class="row-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13"/><path d="M12 6l6 6-6 6"/></svg>
+                <span>урок про первый контакт: как написать, чтобы ответили</span>
+              </li>
+              <li class="lesson-row reveal" style="--d:.08s">
+                <span class="spill">Проанализирован</span>
+                <svg class="row-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13"/><path d="M12 6l6 6-6 6"/></svg>
+                <span>урок «аудит как аргументы»: превратить проблемы сайта в причины купить</span>
+              </li>
+              <li class="lesson-row reveal" style="--d:.16s">
+                <span class="spill spill--ok">Ответил</span>
+                <svg class="row-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13"/><path d="M12 6l6 6-6 6"/></svg>
+                <span>урок про возражения: что ответить на «дорого»</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- декоративный макет: карточка компании + карточка урока -->
+          <div class="lesson-stack">
+            <div class="company-plate reveal" aria-hidden="true">
+              <span class="plate-name">Карточка компании · СтройМонтаж</span>
+              <span class="plate-link">Урок 9
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"/><path d="M12 6l6 6-6 6"/></svg>
+              </span>
+            </div>
+            <div class="lesson-card reveal" style="--d:.1s" aria-hidden="true">
+              <div class="lesson-kicker">
+                <span>Уроки продаж · урок 9 из 12</span>
+                <span class="spill">Подсказка активна</span>
+              </div>
+              <p class="lesson-title">Клиент говорит «дорого». Что ответить?</p>
+              <div class="lesson-progress">
+                <div class="lesson-progress-top"><span>Прогресс курса</span><span>9 из 12 уроков</span></div>
+                <div class="lesson-track"><div class="lesson-fill"></div></div>
+              </div>
+              <ul class="lesson-list">
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5L19.5 7"/></svg>Возражение — запрос аргументов, а не отказ</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5L19.5 7"/></svg>Разбивай цену на результат, а не на часы</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5L19.5 7"/></svg>Дай два варианта — выбор снимает спор</li>
+              </ul>
+              <div class="lesson-foot">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="7.2"/><path d="M12 1.8v4.4M12 17.8v4.4M1.8 12h4.4M17.8 12h4.4"/></svg>
+                <span>Открыт, потому что лид в статусе «Ответил»</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-inline reveal">
+          <p>Первый урок откроется уже в первый день работы. <strong>Готов, Охотник?</strong></p>
+          <a class="btn btn-grad" href="#pricing">Купить
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13"/><path d="M12 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Цены ===== -->
+    <section class="section" id="pricing">
+      <div class="orb orb-d" aria-hidden="true"></div>
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="over">Цены</span>
+          <h2>Один тариф — всё включено</h2>
+          <p>Без подписки за хранение твоей клиентской базы.</p>
+        </div>
+        <div class="pricing pricing--one">
+          <article class="price price--pro reveal">
+            <span class="hit">Все включено</span>
+            <h3>Lead Hunter</h3>
+            <p class="price-num">3&nbsp;400&nbsp;₽</p>
+            <p class="price-terms">Единый тариф · Без подписки за хранение базы</p>
+            <ul>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg>Аудит сайтов: скорость, мобильная версия, PageSpeed</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg>Скоринг лидов 0–100 и категории потенциала</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg>База клиентов и kanban-воронка</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg>Задачи-касания и шаблоны сообщений с подстановками</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg>Импорт Excel/CSV до 5000 строк и экспорт CSV</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg>Кампании и сегменты базы</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg>Генерация КП и скриптов с персонализацией</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg>12 уроков продаж, привязанных к статусу лида</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg>Google Sheets экспорт и бэкапы в один клик</li>
+            </ul>
+            <a class="btn btn-grad btn-block" href="https://t.me/frzmanager" target="_blank" rel="noopener">Купить</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Контакты ===== -->
+    <section class="section" id="contacts">
+      <div class="container">
+        <div class="contacts-card glass reveal">
+          <span class="over">Контакты</span>
+          <h2>Вопросы — пиши в Telegram</h2>
+          <p>Ответим по тарифу, установке и возможностям системы.</p>
+          <div class="contacts-actions">
+            <a class="btn btn-grad" href="https://t.me/frzmanager" target="_blank" rel="noopener">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              Написать: @frzmanager
+            </a>
+            <a class="btn btn-ghost" href="https://t.me/awebdsgn" target="_blank" rel="noopener">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+              Telegram-канал
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Футер ===== -->
+  <footer class="footer">
+    <div class="container footer-in">
+      <a class="logo logo-sm" href="#top">
+        <svg width="20" height="20" viewBox="0 0 32 32" fill="none" stroke="url(#lg)" aria-hidden="true">
+          <circle cx="16" cy="16" r="9" stroke-width="2.2"/>
+          <circle cx="16" cy="16" r="2.6" fill="url(#lg)" stroke="none"/>
+          <path d="M16 1.5v6M16 24.5v6M1.5 16h6M24.5 16h6" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <span>Lead Hunter</span>
+      </a>
+      <p>© 2026 Lead Hunter · <a href="https://t.me/frzmanager" target="_blank" rel="noopener">Telegram: @frzmanager</a> · <a href="https://t.me/awebdsgn" target="_blank" rel="noopener">Канал: awebdsgn</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
